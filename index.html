@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Modul 1</h1>
+    <script>
+      // Uppgift 1
+      var number = 5;
+      let summa = 256;
+      const tak = "blått";
+
+      // Uppgift 2
+      let x = true;
+      let age = 34;
+      let namn = "Emma";
+      let garden = {
+        name: "The dream",
+        type: "rose",
+      };
+      let roses = [
+        "Duchesse de Montebello",
+        "Eddie’s Jewel",
+        "Martin Frobisher",
+      ];
+
+      // Uppgift 3
+      function summera(num1, num2) {
+        return num1 + num2;
+      }
+      let sum = summera(10, 23);
+      console.log("Summan blir: " + sum);
+
+      // Uppgift 4
+      let d = new Date();
+      console.log(d);
+
+      // Uppgift 5
+      let jag = {
+        name: "Emma",
+        age: 34,
+        occupation: "artist",
+        presentation() {
+          console.log(this);
+        },
+      };
+      jag.presentation();
+
+      // Uppgift 6
+      let array = [4, 8, 15, 16, 23, 42];
+      console.log(array);
+      console.log(array[5]);
+      let arraySmaller = array.filter((value) => value < 20);
+      let arrayDouble = arraySmaller.map((value) => value * 2);
+      arrayDouble.forEach((value) => console.log(value));
+
+      // Uppgift 7
+      let i = 1;
+
+      while (i <= 6) {
+        if (i <= 3) {
+          console.log("Loop " + i);
+        } else {
+          console.log("Almost done...");
+        }
+        i++;
+      }
+      console.log("Done!");
+    </script>
+  </body>
+</html>
